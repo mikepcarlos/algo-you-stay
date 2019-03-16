@@ -22,12 +22,6 @@
 
 // solution 2: (Alt Solution)
 
-// function reverseInt(n) {
-//
-//   const rev = n.toString().split("").reverse().join("");
-//
-//   return parseInt(rev) * Math.sign(n);
-// }
 
 reverseInt(-15);
 
