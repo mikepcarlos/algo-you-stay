@@ -9,21 +9,42 @@
 
 //soultion 1: (My Solution)
 
-function vowels(str) {
-  let count = 0;
-  let vowels = ['a', 'e', 'i', 'o', 'u'];
+// function vowels(str) {
+//   let count = 0;
+//   let vowels = ['a', 'e', 'i', 'o', 'u'];
+//
+//   for (let i = 0; i < str.length; i++){
+//     let char = str[i];
+//
+//     for (let vowel of vowels){
+//       if (vowel === char || vowel.toUpperCase() === char.toUpperCase()) {
+//         count++
+//       }
+//     }
+//   }
+//
+//   return count;
+// }
 
-  for (let i = 0; i < str.length; i++){
-    let char = str[i];
+//solution 2: (brake it down)
 
-    for (let vowel of vowels){
-      if (vowel === char || vowel.toUpperCase() === char.toUpperCase()) {
-        count++
-      }
-    }
-  }
+// function vowels(str) {
+//   let counter = 0;
+//   let letters = ['a', 'e', 'i', 'o', 'u'];
+//
+//   for (let char of str.toLowerCase()){
+//     if (letters.includes(char)){
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
 
-  return count;
-}
+//solution 3: (RegEx solution)
+
+// function vowels(str) {
+//   const matches = str.match(/[aeiou]/gi);
+//   return matches ? matches.length : 0;
+// }
 
 module.exports = vowels;
